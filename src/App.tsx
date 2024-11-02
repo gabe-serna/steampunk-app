@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar";
+import ChatPopup from "./components/ChatPopup";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             The premier marketplace for mechanical parts
           </p>
         </div>
+        <ChatPopup />
       </main>
     </div>
   );

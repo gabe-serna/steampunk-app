@@ -8,7 +8,7 @@ const NavBar = () => {
     >
       <a
         href="/"
-        className="pl-4 text-xl font-bold text-bronze-600 md:text-2xl"
+        className="pl-4 text-xl font-bold text-bronze-700 md:text-2xl"
       >
         Browse
       </a>
@@ -16,7 +16,7 @@ const NavBar = () => {
         src="/temp-logo.png"
         className="size-32 translate-y-[40%] md:translate-x-2.5 lg:translate-y-[32%]"
       />
-      <Button variant="outline" className="text-xl md:text-2xl">
+      <Button variant="outline" className="text-xl text-bronze-700 md:text-2xl">
         Sign in
       </Button>
     </div>
