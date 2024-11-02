@@ -2,26 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: "Crimson Pro", serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Alegreya SC";
-}
-
 @layer base {
   :root {
     --background: 25 68% 5%;
@@ -32,16 +12,16 @@ h6 {
     --popover-foreground: 50 58% 86%;
     --primary: 50 58% 86%;
     --primary-foreground: 24 9.8% 10%;
-    --secondary: 12 6.5% 15.1%;
+    --secondary: 25 41% 35%;
     --secondary-foreground: 50 58% 86%;
-    --muted: 12 6.5% 15.1%;
+    --muted: 25 41% 35%;
     --muted-foreground: 24 5.4% 63.9%;
-    --accent: 12 6.5% 15.1%;
+    --accent: 25 41% 35%;
     --accent-foreground: 50 58% 86%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 50 58% 86%;
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
+    --border: 25 41% 35%;
+    --input: 25 41% 35%;
     --ring: 24 5.7% 82.9%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -58,4 +38,36 @@ h6 {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+:root {
+  font-family: "Crimson Pro", serif;
+  overflow-x: hidden;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alegreya SC";
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5e351d;
+  border-radius: 3px;
+}
+
+.background-overlay {
+  background-image: url("steampunk-overlay.webp");
 }
